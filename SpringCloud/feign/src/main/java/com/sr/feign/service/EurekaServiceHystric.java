@@ -1,10 +1,9 @@
-package com.sr.feign.serviceImpl;
+package com.sr.feign.service;
 
-import com.sr.feign.service.EurekaService;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EurekaServiceImpl implements EurekaService {
+public class EurekaServiceHystric implements EurekaService {
     @Override
     public String hiService(String name) {
         return "sorry "+name;
